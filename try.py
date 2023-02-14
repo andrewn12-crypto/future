@@ -14,7 +14,7 @@ import sys
 repo_url = "https://github.com/ranaroussi/yfinance.git"
 local_dir = "/path/to/local/directory"
 subprocess.run(["git", "clone", repo_url, local_dir])
-subprocess.run(["pip", "install", "-r", local_dir])
+subprocess.run(["pip", "install", repo_url, local_dir])
 # Add cloned directory to sys.path
 sys.path.insert(0, local_dir)
 
