@@ -10,4 +10,4 @@ import yfinance as yf
 import pandas_ta as ta
 from plotly.subplots import make_subplots
 from datetime import timedelta
-from datetime import 
+from datetime import date
