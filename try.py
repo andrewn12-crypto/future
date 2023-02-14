@@ -1,13 +1,19 @@
-import numpy as np
-import pandas as pd 
-import matplotlib.pyplot as plt
-import pandas_datareader as data
-from keras.models import load_model
 import streamlit as st
-import plotly.graph_objects as go
-import datetime as dt
-import yfinance as yf
-import pandas_ta as ta
-from plotly.subplots import make_subplots
-from datetime import timedelta
-from datetime import date
+import subprocess
+
+# Specify the repository URL and the absolute path to the local directory where you want to clone it
+repo_url = "https://github.com/ranaroussi/yfinance.git"
+local_dir = "/path/to/local/directory"
+
+# Clone the repository using Git
+subprocess.run(["git", "clone", repo_url, local_dir])
+
+# Add the local directory to the Python path and import the yfinance module
+import sys
+sys.path.insert(0, local_dir + "/yfinance")
+import yfinance
+
+# Use the yfinance module in your Streamlit app
+st.title("Stock Price App")
+st.write("hello")
+st.write("testing")
