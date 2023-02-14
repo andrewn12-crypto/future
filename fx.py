@@ -1,4 +1,4 @@
-pip install git+https://github.com/ranaroussi/yfinance.git
+
 import pandas as pd
 import yfinance as yf
 import numpy as np
