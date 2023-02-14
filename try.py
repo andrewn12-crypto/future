@@ -1,7 +1,6 @@
 
 import streamlit as st
-from git import Repo
-gh repo clone ranaroussi/yfinance
+from git import Repo,clone
 st.title("Stock Price App")
 st.write("hello")
 st.write("testing")
