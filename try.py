@@ -2,4 +2,5 @@
 import streamlit as st
 
 st.title("Stock Price App")
-print("testing")
+st.write("hello")
+st.write("testing")
