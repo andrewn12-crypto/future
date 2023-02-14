@@ -19,7 +19,6 @@ subprocess.run(["pip", "install", "-r", local_dir])
 sys.path.insert(0, local_dir)
 
 # Import yfinance module
-import yfinance
 
 
 # Use the yfinance module in your Streamlit app
