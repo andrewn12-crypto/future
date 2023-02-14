@@ -1,12 +1,13 @@
-yfinance==0.2.11
+import numpy as np
+import pandas as pd 
+import matplotlib.pyplot as plt
+import pandas_datareader as data
+from keras.models import load_model
 import streamlit as st
-import subprocess
-repo_url = "https://github.com/ranaroussi/yfinance.git"
-local_dir = "/path/to/local/directory"
-subprocess.run(["git", "clone", repo_url, local_dir])
-import sys
-sys.path.insert(0, local_dir + "/yfinance") # replace `local_dir` with the actual path to your cloned yfinance directory
-import yfinance
-st.title("Stock Price App")
-st.write("hello")
-st.write("testing")
+import plotly.graph_objects as go
+import datetime as dt
+import yfinance as yf
+import pandas_ta as ta
+from plotly.subplots import make_subplots
+from datetime import timedelta
+from datetime import 
