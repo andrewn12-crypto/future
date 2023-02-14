@@ -15,11 +15,12 @@ repo_url = "https://github.com/ranaroussi/yfinance.git"
 local_dir = "/path/to/local/directory"
 subprocess.run(["git", "clone", repo_url, local_dir])
 subprocess.run(["pip", "install", repo_url, local_dir])
+import yfinance
 # Add cloned directory to sys.path
 sys.path.insert(0, local_dir)
 
 # Import yfinance module
-import yfinance.git
+
 
 # Use the yfinance module in your Streamlit app
 st.title("Stock Price App")
