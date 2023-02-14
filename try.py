@@ -7,10 +7,19 @@ local_dir = "/path/to/local/directory"
 
 # Clone the repository using Git
 subprocess.run(["git", "clone", repo_url, local_dir])
-
-# Add the local directory to the Python path and import the yfinance module
+import subprocess
 import sys
-sys.path.insert(0, local_dir + "/yfinance")
+
+# Clone yfinance repository
+repo_url = "https://github.com/ranaroussi/yfinance.git"
+local_dir = "/path/to/local/directory"
+subprocess.run(["git", "clone", repo_url, local_dir])
+
+# Add cloned directory to sys.path
+sys.path.insert(0, local_dir)
+
+# Import yfinance module
+import yfinance
 
 
 # Use the yfinance module in your Streamlit app
