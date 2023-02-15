@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 import pmdarima
 from pmdarima import auto_arima
+import matplotlib.pyplot as plt
 
 # Download data asli 2010-2023 EURUSD
 
