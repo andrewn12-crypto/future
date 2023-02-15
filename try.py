@@ -1,2 +1,2 @@
 import streamlit as st
-st.install('yfinance')
+st.install('scipy')
