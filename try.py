@@ -1,2 +1,2 @@
 import streamlit as st
-st.install('scipy')
+git+https://github.com/jkbr/httpie.git
