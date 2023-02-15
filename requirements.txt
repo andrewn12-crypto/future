@@ -1,1 +1,2 @@
 git+https://github.com/ranaroussi/yfinance.git
+git+https://github.com/alkaline-ml/pmdarima.git
